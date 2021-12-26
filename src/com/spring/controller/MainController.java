@@ -17,4 +17,16 @@ public class MainController {
 		//http://localhost:8080/SpringMVC/profile
 		return "myProfile";
 	}
+	
+	@RequestMapping("/login")
+	public String login() {
+		//http://localhost:8080/SpringMVC/login
+		return "login";
+	}
+	
+	@RequestMapping("/loginProcess")
+	public String loginFormProcess() {
+		//http://localhost:8080/SpringMVC/loginProcess
+		return "myProfile";
+	}
 }
