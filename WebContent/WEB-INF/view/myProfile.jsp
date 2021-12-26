@@ -7,7 +7,7 @@
 <title>Hassan's Profile</title>
 </head>
 <body>
-<h1>Ciao ${param.username}</h1>
-<h1>Your Password is: ${param.password}</h1>
+<h1>${processedUsername}</h1>
+<h1>${processedPassword}</h1>
 </body>
 </html>
