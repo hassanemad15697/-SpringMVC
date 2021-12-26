@@ -8,6 +8,13 @@ public class MainController {
 
 	@RequestMapping("/")
 	public String main() {
-		return "main-page";
+		//http://localhost:8080/SpringMVC/
+		return "mainPage";
+	}
+	
+	@RequestMapping("/profile")
+	public String profile() {
+		//http://localhost:8080/SpringMVC/profile
+		return "myProfile";
 	}
 }

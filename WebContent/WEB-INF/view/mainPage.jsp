@@ -7,6 +7,6 @@
 <title>Spring MVC</title>
 </head>
 <body>
-<h1>Ciao Hassan</h1>
+<h1>Main Page</h1>
 </body>
 </html>
