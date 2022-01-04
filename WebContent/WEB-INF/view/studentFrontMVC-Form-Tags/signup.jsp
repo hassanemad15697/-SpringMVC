@@ -24,10 +24,14 @@
 		</f:select>
 		<br>
 		Choose a Programming Language :
-		<f:radiobutton path="Language" value="Java"/>Java
-		<f:radiobutton path="Language" value="C++"/>C++
-		<f:radiobutton path="Language" value="C#"/>C#
-		<f:radiobutton path="Language" value="Go"/>Go
+		<f:radiobutton path="Language" value="Java" />Java
+		<f:radiobutton path="Language" value="C++" />C++
+		<f:radiobutton path="Language" value="C#" />C#
+		<f:radiobutton path="Language" value="Go" />Go
+		<br>
+		<f:checkbox path="Players" value="Salah" />Salah
+		<f:checkbox path="Players" value="Messi" />Messi
+		<f:checkbox path="Players" value="CR7" />CR7
 		<br>
 		<input type="submit" value="Sign Up">
 	</f:form>

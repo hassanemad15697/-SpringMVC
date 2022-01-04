@@ -11,7 +11,7 @@ public class Account {
 	private String Department;
 	private HashMap<String, String> DepartmentOptions;
 	private String Language;
-	
+	private String[] Players;
 	public Account()
 	{
 		DepartmentOptions=new HashMap<String, String>();
@@ -62,6 +62,12 @@ public class Account {
 	}
 	public void setLanguage(String language) {
 		Language = language;
+	}
+	public String[] getPlayers() {
+		return Players;
+	}
+	public void setPlayers(String[] players) {
+		Players = players;
 	}
 	
 }
