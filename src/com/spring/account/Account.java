@@ -7,7 +7,7 @@ public class Account {
 	private String Age;
 	private String Email;
 	private String Password;
-	
+	private String Department;
 	public String getName() {
 		return Name;
 	}
@@ -31,6 +31,12 @@ public class Account {
 	}
 	public void setPassword(String password) {
 		Password = password;
+	}
+	public String getDepartment() {
+		return Department;
+	}
+	public void setDepartment(String department) {
+		Department = department;
 	}
 
 

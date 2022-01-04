@@ -11,6 +11,6 @@
 	<h1>${signUpData.email}</h1>
 	<h1>${signUpData.password}</h1>
 	<h1>${signUpData.age}</h1>
-
+	<h1>${signUpData.department}</h1>
 </body>
 </html>

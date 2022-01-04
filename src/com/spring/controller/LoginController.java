@@ -13,6 +13,7 @@ public class LoginController {
 	@RequestMapping("/signupNewUser")
 	public String signupNewUser(@RequestParam("name") String Name,@RequestParam("email") String Email,
 								@RequestParam("password") String Password,@RequestParam("age") String Age,
+								@RequestParam("age") String Deparment,
 								Model model) {
 		
 		Account account = new Account();
@@ -20,7 +21,7 @@ public class LoginController {
 		account.setEmail(Email);
 		account.setName(Name.toUpperCase());
 		account.setPassword(Password);
-		
+		account.setDepartment(Deparment);
 		model.addAttribute("signUpData",account);
 		
 		return "profile";

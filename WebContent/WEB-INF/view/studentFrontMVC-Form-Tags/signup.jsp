@@ -10,11 +10,22 @@
 </head>
 <body>
 	<h1>Sign Up MVC Tags</h1>
-	<f:form modelAttribute="signUpData"  action="signupNewUserMVCTags">
-		Name: <f:input path="Name" /><br>
-		Email: <f:input path="Email" /><br>
-		Password: <f:input path="Password" /><br>
-		Age: <f:input path="Age" /><br>
+	<f:form modelAttribute="signUpData" action="signupNewUserMVCTags">
+		Name: <f:input path="Name" />
+		<br>
+		Email: <f:input path="Email" />
+		<br>
+		Password: <f:input path="Password" />
+		<br>
+		Age: <f:input path="Age" />
+		<br>
+		<f:select path="Department">
+			<f:option value="Communication" />
+			<f:option value="Civil" />
+			<f:option value="Architecture" />
+			<f:option value="Power" />
+		</f:select>
+		<br>
 		<input type="submit" value="Sign Up">
 	</f:form>
 
