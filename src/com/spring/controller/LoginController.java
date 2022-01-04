@@ -21,7 +21,6 @@ public class LoginController {
 		account.setEmail(Email);
 		account.setName(Name.toUpperCase());
 		account.setPassword(Password);
-		account.setDepartment(Deparment);
 		model.addAttribute("signUpData",account);
 		
 		return "profile";

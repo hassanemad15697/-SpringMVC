@@ -1,5 +1,6 @@
 package com.spring.account;
 
+import java.util.HashMap;
 
 public class Account {
 
@@ -8,6 +9,17 @@ public class Account {
 	private String Email;
 	private String Password;
 	private String Department;
+	private HashMap<String, String> DepartmentOptions;
+	
+	public Account()
+	{
+		DepartmentOptions=new HashMap<String, String>();
+		DepartmentOptions.put("Communication", "COMM");
+		DepartmentOptions.put("Civil", "CVL");
+		DepartmentOptions.put("Architecture", "ARC");
+		DepartmentOptions.put("Power", "PWR");
+		
+	}
 	public String getName() {
 		return Name;
 	}
@@ -38,8 +50,11 @@ public class Account {
 	public void setDepartment(String department) {
 		Department = department;
 	}
-
-
+	public HashMap<String, String> getDepartmentOptions() {
+		return DepartmentOptions;
+	}
+	public void setDepartmentOptions(HashMap<String, String> departmentOptions) {
+		DepartmentOptions = departmentOptions;
+	}
 	
-
 }

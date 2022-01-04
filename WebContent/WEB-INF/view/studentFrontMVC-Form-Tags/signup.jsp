@@ -20,10 +20,7 @@
 		Age: <f:input path="Age" />
 		<br>
 		<f:select path="Department">
-			<f:option value="Communication" />
-			<f:option value="Civil" />
-			<f:option value="Architecture" />
-			<f:option value="Power" />
+			<f:options items="${signUpData.departmentOptions}" />
 		</f:select>
 		<br>
 		<input type="submit" value="Sign Up">
