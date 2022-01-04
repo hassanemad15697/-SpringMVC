@@ -18,10 +18,10 @@ public class LoginController {
 		Account account = new Account();
 		account.setAge(Age+"years");
 		account.setEmail(Email);
-		account.setName(Name);
+		account.setName(Name.toUpperCase());
 		account.setPassword(Password);
 		
-		model.addAttribute("profileData",account);
+		model.addAttribute("signUpData",account);
 		
 		return "profile";
 	}
