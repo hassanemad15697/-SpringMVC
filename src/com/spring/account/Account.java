@@ -10,6 +10,7 @@ public class Account {
 	private String Password;
 	private String Department;
 	private HashMap<String, String> DepartmentOptions;
+	private String Language;
 	
 	public Account()
 	{
@@ -55,6 +56,12 @@ public class Account {
 	}
 	public void setDepartmentOptions(HashMap<String, String> departmentOptions) {
 		DepartmentOptions = departmentOptions;
+	}
+	public String getLanguage() {
+		return Language;
+	}
+	public void setLanguage(String language) {
+		Language = language;
 	}
 	
 }

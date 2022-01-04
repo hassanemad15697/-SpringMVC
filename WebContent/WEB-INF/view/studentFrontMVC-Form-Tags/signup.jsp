@@ -15,13 +15,19 @@
 		<br>
 		Email: <f:input path="Email" />
 		<br>
-		Password: <f:input path="Password" />
+		Password: <f:password path="Password" />
 		<br>
 		Age: <f:input path="Age" />
 		<br>
 		<f:select path="Department">
 			<f:options items="${signUpData.departmentOptions}" />
 		</f:select>
+		<br>
+		Choose a Programming Language :
+		<f:radiobutton path="Language" value="Java"/>Java
+		<f:radiobutton path="Language" value="C++"/>C++
+		<f:radiobutton path="Language" value="C#"/>C#
+		<f:radiobutton path="Language" value="Go"/>Go
 		<br>
 		<input type="submit" value="Sign Up">
 	</f:form>
