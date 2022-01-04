@@ -2,6 +2,8 @@ package com.spring.account;
 
 import java.util.HashMap;
 
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
@@ -10,6 +12,9 @@ public class Account {
 	@NotNull(message="Required Field")
 	@Size(min=1,message="Required Field")
 	private String Name;
+	@NotNull(message="Required Field")
+	@Min(value = 18, message = "must have 18 or older")
+	@Max(value = 50,message = "must have 50 or younger")
 	private String Age;
 	private String Email;
 	private String Password;
