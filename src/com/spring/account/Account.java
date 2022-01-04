@@ -5,6 +5,7 @@ import java.util.HashMap;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
 public class Account {
@@ -16,6 +17,8 @@ public class Account {
 	@Min(value = 18, message = "must have 18 or older")
 	@Max(value = 50,message = "must have 50 or younger")
 	private String Age;
+	@NotNull(message="Required Field")
+	@Pattern(regexp = "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$" , message = "Insert a valid Email")
 	private String Email;
 	private String Password;
 	private String Department;
