@@ -12,12 +12,12 @@ public class LoginController {
 
 	@RequestMapping("/signupNewUser")
 	public String signupNewUser(@RequestParam("name") String Name,@RequestParam("email") String Email,
-								@RequestParam("password") String Password,@RequestParam("age") String Age,
+								@RequestParam("password") String Password,@RequestParam("age") Integer Age,
 								@RequestParam("age") String Deparment,
 								Model model) {
 		
 		Account account = new Account();
-		account.setAge(Age+"years");
+		account.setAge(Age);
 		account.setEmail(Email);
 		account.setName(Name.toUpperCase());
 		account.setPassword(Password);

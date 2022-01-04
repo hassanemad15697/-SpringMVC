@@ -16,7 +16,7 @@ public class Account {
 	@NotNull(message="Required Field")
 	@Min(value = 18, message = "must have 18 or older")
 	@Max(value = 50,message = "must have 50 or younger")
-	private String Age;
+	private Integer Age;
 	@NotNull(message="Required Field")
 	@Pattern(regexp = "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$" , message = "Insert a valid Email")
 	private String Email;
@@ -40,10 +40,10 @@ public class Account {
 	public void setName(String name) {
 		Name = name;
 	}
-	public String getAge() {
+	public Integer getAge() {
 		return Age;
 	}
-	public void setAge(String age) {
+	public void setAge(Integer age) {
 		Age = age;
 	}
 	public String getEmail() {
