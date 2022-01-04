@@ -12,6 +12,7 @@
 	<h1>Sign Up MVC Tags</h1>
 	<f:form modelAttribute="signUpData" action="signupNewUserMVCTags">
 		Name: <f:input path="Name" />
+		<f:errors path="Name"/>
 		<br>
 		Email: <f:input path="Email" />
 		<br>

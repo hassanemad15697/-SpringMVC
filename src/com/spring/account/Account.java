@@ -2,8 +2,13 @@ package com.spring.account;
 
 import java.util.HashMap;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
 public class Account {
 
+	@NotNull(message="Required Field")
+	@Size(min=1,message="Required Field")
 	private String Name;
 	private String Age;
 	private String Email;
