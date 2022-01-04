@@ -4,12 +4,13 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>MassengerMVC</title>
+<title>Insert title here</title>
 </head>
 <body>
-	<h1>Main Page</h1>
-	<a href="signin">Sign In</a>
-	<br>
-	<a href="signup">Sign Up</a>
+	<h1>${profileData.name}</h1>
+	<h1>${profileData.email}</h1>
+	<h1>${profileData.password}</h1>
+	<h1>${profileData.age}</h1>
+
 </body>
 </html>

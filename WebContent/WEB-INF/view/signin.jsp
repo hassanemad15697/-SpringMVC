@@ -4,10 +4,9 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Hassan's Profile</title>
+<title>Insert title here</title>
 </head>
 <body>
-<h1>${processedUsername}</h1>
-<h1>${processedPassword}</h1>
+
 </body>
 </html>
