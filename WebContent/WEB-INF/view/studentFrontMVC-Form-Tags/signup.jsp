@@ -7,12 +7,18 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Sign Up MVC Tags</title>
+<style type="text/css">
+.error {
+	color: red;
+	font-weight: bold;
+}
+</style>
 </head>
 <body>
 	<h1>Sign Up MVC Tags</h1>
 	<f:form modelAttribute="signUpData" action="signupNewUserMVCTags">
 		Name: <f:input path="Name" />
-		<f:errors path="Name"/>
+		<f:errors path="Name" cssClass="error" />
 		<br>
 		Email: <f:input path="Email" />
 		<br>
