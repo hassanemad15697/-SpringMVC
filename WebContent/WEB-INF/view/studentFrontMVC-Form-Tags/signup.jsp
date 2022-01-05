@@ -29,6 +29,9 @@
 		Age: <f:input path="Age" />
 		<f:errors path="Age" cssClass="error" />
 		<br>
+		Phone: <f:input path="Phone" />
+		<f:errors path="Phone" cssClass="error" />
+		<br>
 		<f:select path="Department">
 			<f:options items="${signUpData.departmentOptions}" />
 		</f:select>

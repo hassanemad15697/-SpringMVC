@@ -16,7 +16,7 @@ public class LoginControllerMVC_FormTags {
 
 	@RequestMapping("/signupNewUserMVCTags")
 	public String signupNewUser(@Valid @ModelAttribute("signUpData") Account account, BindingResult bindingResult) {
-
+		System.out.println(bindingResult);
 		if (bindingResult.hasErrors()) {
 			return "studentFrontMVC-Form-Tags/signup";
 		} else {
@@ -29,6 +29,6 @@ public class LoginControllerMVC_FormTags {
 	@InitBinder
 	public void initBinder(WebDataBinder binder) {
 		StringTrimmerEditor editor=new StringTrimmerEditor(true);
-		binder.registerCustomEditor(String.class	, editor);
+		binder.registerCustomEditor(String.class, editor);
 	}
 }

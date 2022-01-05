@@ -13,6 +13,7 @@
 	<h1>${signUpData.email}</h1>
 	<h1>${signUpData.password}</h1>
 	<h1>${signUpData.age}</h1>
+	<h1>${signUpData.phone}</h1>
 	<h1>${signUpData.department}</h1>
 	<h1>${signUpData.language}</h1>
 	<h1>

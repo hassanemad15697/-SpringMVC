@@ -13,9 +13,9 @@
 	<form action="signupNewUser">
 		Name: <input type="text" placeholder="name" name="name">
 		Email: <input type="text" placeholder="email" name="email">
-		Password: <input type="password" placeholder="password" name="password">
-		Age: <input type="text" placeholder="age" name="age"> 
-		<input type="submit" value="Sign Up">
+		Password: <input type="password" placeholder="password"
+			name="password"> Age: <input type="text" placeholder="age"
+			name="age"> <input type="submit" value="Sign Up">
 	</form>
 </body>
 </html>
